@@ -1,3 +1,7 @@
+$(window).on("load", function(e) {
+	$(".cont-loader").fadeOut('slow')
+})
+
 $(document).ready( function () {
 
     $('.btn-menu-xs').click( function () {
@@ -6,77 +10,17 @@ $(document).ready( function () {
         $('.header-nav').toggleClass('open')
     })
 
-    $('.cont-slide').slick({
+    $('.slide-home').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        speed: 900,
-        arrows: false,
-        dots: true,
         autoplay: true,
         autoplaySpeed: 5000,
-        pauseOnHover: false,
-        pauseOnFocus: false
-    })
-
-    $('.bann-slide-home').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
         arrows: false,
         dots: true,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        pauseOnHover: false,
+        speed: 1000,
         pauseOnFocus: false,
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 481,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
-                }
-            }
-        ]
-    })
-
-    $('.products-slide').slick({
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 5,
-        autoplay: true,
-        autoplaySpeed: 11000,
-        arrows: false,
-        dots: true,
-        pauseOnFocus: false,
-        pauseOnHover: false,
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            }
-        ]
+        pauseOnHover: false
     })
 
     $('.slide-marcas').slick({
@@ -107,36 +51,5 @@ $(document).ready( function () {
             }
         ]
     })
-
-    $('.buy-slide').slick({
-		infinite: false,
-		centerMode: true,
-		slidesToShow: 3,
-		dots: true,
-		focusOnSelect: true,
-		speed: 500,
-		centerPadding: '0',
-		responsive: [
-      	{
-      		breakpoint: 769,
-	        settings: {
-					centerMode: false,
-					slidesToShow: 2,
-					slidesToScroll: 2,
-					arrows: false,
-					dots: true,
-	        }
-		},
-			{
-				breakpoint: 481,
-	         	settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					arrows: false,
-					dots: true
-	            }
-			}
-    	]
-	})
 
 })
