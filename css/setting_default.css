@@ -1108,10 +1108,10 @@ header.page-header.type2 a.action.my-wishlist {
 .cms-index-index header.page-header.type2.header-newskin {
     box-shadow: 0 3px 20px rgba(0,0,0,.35);
 }
-body.cms-index-index .page-main {
+body.cms-index-index .page-main, body.cms-quienes-somos .page-main {
     max-width: 100%;
     padding: 0;
 }
-body.cms-index-index .columns .column.main {
+body.cms-index-index .columns .column.main, body.cms-quienes-somos .columns .column.main  {
     padding-bottom: 0;
 }
