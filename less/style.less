@@ -1,3 +1,7 @@
+::selection {
+    background-color: #E30A18;
+    color: white;
+}
 .cont-loader {
     position: fixed;
     width: 100%;
@@ -2051,7 +2055,6 @@ body {
 	}
 }
 .tiendas {
-    padding: 2em 0 0;
     .tienda-content {
         display: flex;
         flex-wrap: wrap;
@@ -2112,6 +2115,103 @@ body {
             }
         }
     }
+}
+.cont-terminos {
+	.intro-terminos {
+		h1 {
+			padding: 0 0 1.5em;
+			font-size: 1.5em;
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: 600;
+			@media (max-width: 991px) {
+				padding: 0 0 .75em;
+			}
+		}
+		p {
+			font-size: .875em;
+			a {
+				color: #E30A18;
+				font-weight: 700;
+				transition: .3s;
+				&:hover {
+					color: #333333;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	.row-terminos {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 1.5em 0 0;
+		margin: 0 -15px;
+		counter-reset: countTerminos;
+		&__col {
+			position: relative;
+			width: 100%;
+			padding: 0 15px;
+			.txt {
+				padding: 0 0 1em;
+				&:before {
+					content: counters(countTerminos, '.');
+					counter-increment: countTerminos;
+					position: relative;
+					width: 25px;
+					height: 25px;
+					margin-right: .5em;
+					display: block;
+					float: left;
+					background-color: #E30A18;
+					border-radius: 100%;
+					font-size: .875em;
+					color: white;
+					text-align: center;
+					line-height: 25px;
+					font-weight: 600;
+				}
+			}
+			h3 {
+				padding: .3em 0 .5em;
+				font-size: 1em;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+			p {
+				font-size: .875em;
+				a {
+					color: #E30A18;
+					font-weight: 600;
+					transition: .3s;
+					&:hover {
+						color: #333333;
+						text-decoration: underline;
+					}
+				}
+			}
+			ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+				li {
+					position: relative;
+					margin: .35em 0;
+					padding-left: .75em;
+					font-size: .875em;
+					&:before {
+						content: "";
+						position: absolute;
+						width: 6px;
+						height: 6px;
+						background-color: #E30A18;
+						border-radius: 100%;
+						top: 7px;
+						left: 0;
+					}
+				}
+			}
+		}
+	}
 }
 .cont-error {
 	padding: 3.5em 0 2em;
