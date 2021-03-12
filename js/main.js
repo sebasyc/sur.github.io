@@ -52,4 +52,35 @@ $(document).ready( function () {
         ]
     })
 
+    $('.buy-slide').slick({
+		infinite: false,
+		centerMode: true,
+		slidesToShow: 3,
+		dots: true,
+		focusOnSelect: true,
+		speed: 500,
+		centerPadding: '0',
+		responsive: [
+      	{
+      		breakpoint: 769,
+	        settings: {
+					centerMode: false,
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					arrows: false,
+					dots: true,
+	        }
+		},
+			{
+				breakpoint: 481,
+	         	settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false,
+					dots: true
+	         }
+			}
+    	]
+	})
+
 })
