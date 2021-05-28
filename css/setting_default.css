@@ -1025,12 +1025,6 @@ html, body {
     content: '\e87b';
     font-size: 14px;
 }
-.products.wrapper ~ .toolbar .limiter {
-    float: left;
-}
-.products.wrapper ~ .toolbar .pages {
-    float: right;
-}
 .block-category-list .block-title, .filter-options-title, .filter .filter-current-subtitle {
     padding-left: 0;
     padding-right: 0;
@@ -1040,6 +1034,7 @@ html, body {
 }
 .catalog-category-view .column.main .products-grid {
     padding-top: 20px;
+    margin: 0;
 }
 @media (min-width: 768px) {
     .product.data.items > .item.title {
